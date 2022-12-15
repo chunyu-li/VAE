@@ -18,4 +18,4 @@ If you have at least one NVIDIA GPU on your machine and have installed CUDA, the
 
 ## Reproducibility
 
-We have tried many different random seeds and chosen a good one. The random seed have been set by `torch.manual_seed()` in `main.py` , the results should be the same as the demonstrated images.
+We have tried many different random seeds and chosen a good one. The random seed has been set by `torch.manual_seed()` in `main.py` , the running results should be the same as the demonstrated images.
