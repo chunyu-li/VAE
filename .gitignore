@@ -1,0 +1,9 @@
+# Python cache files
+__pycache__/
+
+# PyCharm files
+.idea/
+
+# macOS dir files
+.DS_Store
+
