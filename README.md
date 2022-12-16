@@ -32,6 +32,20 @@ python3 main.py
 
 If you have at least one NVIDIA GPU on your machine and have installed CUDA, the program will be executed on GPU. It's **highly recommended** to use GPU since it will reduce the training time tremendously.
 
+## Results demonstration
+
+Reconstruct one image after each iteration of epoch:
+
+![Epochs](./figures/Epochs.png)
+
+The overall reconstruction results on multiple images:
+
+![Checks](./figures/Checks.png)
+
+Walk in the latent space from one dog to another:
+
+![Walks](./figures/Walks.png)
+
 ## Reproducibility
 
 We have tried many different random seeds and chosen a good one. The random seed has been set by `torch.manual_seed()` in `main.py` , the running results should be the same as the demonstrated images.
