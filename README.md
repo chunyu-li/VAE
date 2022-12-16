@@ -17,13 +17,13 @@ input/all-dogs/n02097474_410.jpg
 ...
 ```
 
-Then you can run the code:
+Then you can run the code, all the output images will be saved in the `output` directory for the convenience for Linux Server developers as server side normally doesn't have GUI to display images.
 
 ```shell
 python3 main.py
 ```
 
-If you have at least one NVIDIA GPU on your machine and have installed CUDA, the program will be executed on GPU. We highly recommend you to use GPU since it will reduce the training time tremendously.
+If you have at least one NVIDIA GPU on your machine and have installed CUDA, the program will be executed on GPU. It's **highly recommended** to use GPU since it will reduce the training time tremendously.
 
 ## Reproducibility
 

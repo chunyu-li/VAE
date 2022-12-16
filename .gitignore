@@ -7,3 +7,6 @@ __pycache__/
 # macOS dir files
 .DS_Store
 
+# Input images files
+/input/all-dogs/*.jpg
+/input/all-dogs/*.png
