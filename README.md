@@ -8,13 +8,20 @@ This implementation is based on PyTorch. All code is in `main.py`, including bot
 python3 -m pip install -r requirements.txt
 ```
 
-And you also need to download the training images from [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/), we didn't prepare the dataset in repository since it's too large (about 757MB). Put all image files in the `input/all-dogs` directory then the code will be able to access it, the directory structure will be like:
+And you also need to download the training images from [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/), we didn't prepare the dataset in repository since it's too large (about 757MB). Put all the image files into `input/all-dogs` directory then the code will be able to access to it, the directory structure will be like:
 
 ```
-input/all-dogs/n02089867_3360.jpg
-input/all-dogs/n02093859_1628.jpg
-input/all-dogs/n02097474_410.jpg
-...
+.
+├── LICENSE
+├── README.md
+├── input
+│   └── all-dogs
+│       ├── n02085620_199.jpg
+│       ├── n02085620_242.jpg
+│       ├── n02085620_7.jpg
+│       └── ...
+├── main.py
+└── requirements.txt
 ```
 
 Then you can run the code, all the output images will be saved in the `output` directory for the convenience for Linux Server developers as server side normally doesn't have GUI to display images.
