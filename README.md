@@ -8,6 +8,8 @@ This implementation is based on PyTorch. All code is in `main.py`, including bot
 python3 -m pip install -r requirements.txt
 ```
 
+And you also need to download the training images from [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/), we didn't prepare the dataset in repository since it's too large (about 757MB). Please put all image files in the `input/all-dogs` directory then the code will be able to access it.
+
 Then you can run the code:
 
 ```shell
