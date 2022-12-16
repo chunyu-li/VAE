@@ -10,3 +10,5 @@ __pycache__/
 # Input images files
 /input/all-dogs/*.jpg
 /input/all-dogs/*.png
+
+/output/

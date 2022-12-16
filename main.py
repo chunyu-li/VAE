@@ -10,16 +10,6 @@ import matplotlib.pyplot as plt
 from torch.autograd import Variable
 import pathlib
 
-# Set the batch size in the training process
-batch_size = 32
-
-# Use CUDA if it exists
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print("Using device: %s" % device)
-
-# Set pytorch random seed, I have tried many different seeds and the 500 turns out to be a good choice
-torch.manual_seed(500)
-
 # Since we use our own dataset, we need to implement a subclass of PyTorch Dataset
 class DogDataset(Dataset):
     def __init__(self, img_dir, transform1=None, transform2=None):
@@ -148,6 +138,16 @@ class VAE(nn.Module):
 
 
 if __name__ == '__main__':
+    # Use CUDA if it exists
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print("Using device: %s" % device)
+
+    # Set the batch size in the training process
+    batch_size = 32
+
+    # Set pytorch random seed, I have tried many different seeds and the 500 turns out to be a good choice
+    torch.manual_seed(500)
+
     # First preprocessing of data
     transform1 = transforms.Compose([transforms.Resize(64),
                                      transforms.CenterCrop(64)])
