@@ -17,8 +17,7 @@ batch_size = 32
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device: %s" % device)
 
-# Set pytorch random seed, I have tried many different seeds and the 100 turns out to be a good choice
-# 500 is also OK
+# Set pytorch random seed, I have tried many different seeds and the 500 turns out to be a good choice
 torch.manual_seed(500)
 
 # Since we use our own dataset, we need to implement a subclass of PyTorch Dataset
