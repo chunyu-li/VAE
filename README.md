@@ -2,7 +2,7 @@
 
 ## Get started
 
-This implementation is based on PyTorch. All code is in `main.py`, including both training and evaluation parts. To run the code, you need to first install required dependencies:
+This implementation is based on PyTorch. All the code is in `main.py`, including both training and evaluation parts. To run the code, you need to first install required dependencies:
 
 ```shell
 python3 -m pip install -r requirements.txt
@@ -23,6 +23,8 @@ And you also need to download the training images from [Stanford Dogs Dataset](h
 ├── main.py
 └── requirements.txt
 ```
+
+One thing should be noticed is that the decompressed folder of Stanford Dogs Dataset includes multiple subfolders corresponding to different categories, which is used for classification tasks. However, in our case, we only need to reconstruct the image and there is no need to perform classification, so this is actually an unsupervised learning which means we don't need annotations and we can put all the images with different categories into one folder to train. So we recommend you to use another dataset provided by [Kaggle](https://www.kaggle.com/competitions/generative-dog-images/data?select=all-dogs.zip) for convenience, its data is the same as Stanford's except that it has put all the images into one folder.
 
 Then you can run the code, all the output images will be saved in the `output` directory for the convenience for Linux Server developers as server side normally doesn't have GUI to display images.
 
